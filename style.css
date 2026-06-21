@@ -1,9 +1,9 @@
-/* * {
-  font-family: "Satisfy", cursive;
+* {
+  font-family:'Times New Roman', Times, serif;
   font-weight: 400;
   font-style: normal;scrollbar-width: ;
 }
-  */
+  *
 
 .title {
     font-size: 60px;
@@ -16,11 +16,11 @@
     width: 100%;
     height: auto;
     text-align: left;
-    padding: 1rem;
+    padding: 3rem;
     border-radius: 10px;
 }
 
-.card-container {
+.container {
     display: flex;
     justify-content: center;
     width: 100%;
@@ -28,7 +28,59 @@
 
 .card h6 {
     font-size: 5rem;
-    
 }
 
+.cardcontainer {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 2rem;
+    height: 100%;
+
+}
+
+ .checklist {
+    width: 30%;
+    height: 300px;
+    margin-right: 10px;
+    border-radius: 10px;
+    justify-content: center;
+ }
+
+[data-tab-content] {
+    display:none;
+}
+
+active.[data-tab-content] {
+    display; block;
+}
+
+
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid black;
+}
+
+.tab {
+    cursor: pointer;
+    padding: 10px;
+}
+
+.tab.active {
+    background-color: #CCC;
+}
+
+.tab:hover {
+    background-color: #AAA;
+}
+
+.tab-content {
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
 /*star buttons
